@@ -11,10 +11,6 @@ const countryList = document.querySelector('.country-list');
 
 searchBox.addEventListener('input', _.debounce(onInput, 300));
 
-// Винети її в окремий файл fetchCountries.js і зробити іменований експорт.
-
-//---------------------------------------------------
-
 function onInput(evt) {
   let name = evt.target.value.trim();
   if (name) {
